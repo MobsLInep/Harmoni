@@ -437,8 +437,5 @@ async def waifu(ctx):
 	embed.set_image(url=msg)
 	await ctx.send(embed=embed)
 
-
-
-
 keep_alive.keep_alive()
 client.run(Token)
