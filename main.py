@@ -6,7 +6,6 @@ from datetime import datetime
 import json
 import os
 import random
-import keep_alive
 from discord.ext import commands
 from discord.utils import get
 from discord import FFmpegPCMAudio
@@ -21,7 +20,7 @@ def get_prefix(client, message):
         prefixes = json.load(f)
 
     return prefixes[str(message.guild.id)]
-Toen=os.environ.get("token")
+Token=os.environ.get("token")
 intents= discord.Intents.default()
 intents.members = True
 
@@ -454,4 +453,4 @@ async def waifu(ctx):
 
 
 keep_alive.keep_alive()
-client.run(Toen)
+client.run(Token)
