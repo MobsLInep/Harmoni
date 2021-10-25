@@ -250,14 +250,6 @@ async def serverinfo(ctx):
 
 		await ctx.send(embed=embed)
 
-@client.command()
-async def verify(ctx):
-    print(ctx.message.channel.id)
-    print(ctx.message.author)
-    mymessage = await ctx.send('Done! Welcome!')
-    await asyncio.sleep(3)
-    await mymessage.delete()
-    await ctx.message.delete()
 
 
 @client.command()
@@ -291,10 +283,6 @@ async def random8balltest(ctx):
     await asyncio.sleep(100)
     await mym.delete()
 
-@client.command(name="msg", pass_context=True)
-async def msg(context, userid, *, message):
-    user = client.get_user(userid)
-    await user.send(message)
 
 #ban,unban,kick,mute
 @client.command()
