@@ -1,0 +1,2 @@
+# Harmoni
+A Discord Bot
